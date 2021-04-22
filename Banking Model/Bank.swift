@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  Banking Model
-//
-//  Created by CSUFTitan on 4/22/21.
-//
-
 import Foundation
 
 class Bank {
@@ -22,8 +15,7 @@ class Bank {
     }
 
     func addBankClients(_ name: String, _ ID: Int) {
-        //for (key, value) in bankClients {
-        //}
+        bankClients[name] = ID
     }
 
     func incBalance(_ deposit: Double) {
@@ -33,8 +25,10 @@ class Bank {
     func decBalance(_ withdraw: Double){
         totalBalance -= withdraw
     }
-    func transaction(){
-        
+    func printTransactions(){
+        for (key, value) in bankClients {
+            print("\(key): \(value)")
+        }
     }
 
 }
