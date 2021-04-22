@@ -43,6 +43,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="RKs-Ee-8kx" kind="show" id="jYk-ke-8LI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08m-CK-yaD">
                                                 <rect key="frame" x="0.0" y="220" width="310" height="80"/>
@@ -56,9 +59,6 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="RKs-Ee-8kx" kind="show" id="oAA-Kp-6e2"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -89,55 +89,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e2-nz-neL">
-                                <rect key="frame" x="22" y="13" width="133" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I.D." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdB-U1-kgF">
-                                <rect key="frame" x="27" y="61" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2Z-6O-Baa">
-                                <rect key="frame" x="113" y="121" width="221" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sly-xK-z4B">
-                                <rect key="frame" x="160" y="478" width="98" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Deposite"/>
-                                <connections>
-                                    <segue destination="PNQ-5M-rkm" kind="popoverPresentation" popoverAnchorView="sly-xK-z4B" id="biw-QO-jfa">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8p-NJ-IWr">
-                                <rect key="frame" x="115" y="236" width="180" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="View other accounts"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45K-d4-tLH">
-                                <rect key="frame" x="169" y="560" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send Money"/>
-                                <connections>
-                                    <segue destination="sXz-BW-BYD" kind="popoverPresentation" popoverAnchorView="45K-d4-tLH" id="PY5-Lo-HXF">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Bmw-lY-POc">
+                                <rect key="frame" x="49.5" y="192.5" width="315" height="457"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="0mn-nY-MaS">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="457"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e2-nz-neL">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="62"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I.D." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdB-U1-kgF">
+                                                <rect key="frame" x="0.0" y="62" width="315" height="61.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2Z-6O-Baa">
+                                                <rect key="frame" x="0.0" y="123.5" width="315" height="62"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8p-NJ-IWr">
+                                                <rect key="frame" x="0.0" y="185.5" width="315" height="90.5"/>
+                                                <state key="normal" title="View other accounts"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sly-xK-z4B">
+                                                <rect key="frame" x="0.0" y="276" width="315" height="90.5"/>
+                                                <state key="normal" title="Deposite"/>
+                                                <connections>
+                                                    <segue destination="PNQ-5M-rkm" kind="popoverPresentation" popoverAnchorView="sly-xK-z4B" id="biw-QO-jfa">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45K-d4-tLH">
+                                                <rect key="frame" x="0.0" y="366.5" width="315" height="90.5"/>
+                                                <state key="normal" title="Send Money"/>
+                                                <connections>
+                                                    <segue destination="sXz-BW-BYD" kind="popoverPresentation" popoverAnchorView="45K-d4-tLH" id="PY5-Lo-HXF">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="457" id="8sK-an-FhU"/>
+                                    <constraint firstAttribute="width" constant="315" id="rxc-sC-2pa"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Voh-go-j7b"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bmw-lY-POc" firstAttribute="centerX" secondItem="bjE-ST-wYu" secondAttribute="centerX" id="gN3-Jd-yOA"/>
+                            <constraint firstItem="Bmw-lY-POc" firstAttribute="centerX" secondItem="bjE-ST-wYu" secondAttribute="centerX" id="rxw-jH-Qon"/>
+                            <constraint firstItem="Bmw-lY-POc" firstAttribute="centerY" secondItem="bjE-ST-wYu" secondAttribute="centerY" id="sm0-xW-GM9"/>
+                            <constraint firstItem="Bmw-lY-POc" firstAttribute="centerY" secondItem="bjE-ST-wYu" secondAttribute="centerY" id="wY9-pb-28f"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rSj-TD-5bV"/>
                 </viewController>
