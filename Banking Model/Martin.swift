@@ -7,19 +7,19 @@
 
 import Foundation
 
-class Address : BankClient {
+class Address {
     var Street : String = ""
     var City : String = ""
     var State : String = ""
-    var PostalCode : Int
+    var PostalCode : Int = 0
     var Country : String = ""
     
-    let addressFiles = Files(Street: " ", City: " ", State: " ", PostalCode: Int, Country: " " )
+    /*let addressFiles = Files(Street: " ", City: " ", State: " ", PostalCode: Int, Country: " " )
     let propertyListEncoder = PropertyListEncoder()
     if let encodedFiles = try?
         propertyListEncoder.encode(addressFiles) {
             try? encodedFiles?.write(to: archiveURL, options: .noFileProtection)
-        }
+        }*/
     
     
     func MailedBankStatements() {
