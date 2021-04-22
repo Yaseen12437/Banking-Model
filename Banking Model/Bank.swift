@@ -8,30 +8,33 @@
 import Foundation
 
 class Bank {
-  var bankClients: [String:Int]
-  var bankName: String
-  var totalBalance: Double
-  var phoneNumber: Int
-  var bankID: Int
-  init() {
-    bankClients = [:]
-    bankName = ""
-    totalBalance = 0
-    phoneNumber = 0
-    bankID = 0
-  }
+    var bankClients: [String:Int]
+    var bankName: String
+    var totalBalance: Double
+    var phoneNumber: Int
+    var bankID: Int
+    init() {
+        bankClients = [:]
+        bankName = ""
+        totalBalance = 0
+        phoneNumber = 0
+        bankID = 0
+    }
 
-  func addBankClients(_ name: String, _ ID: Int) {
-    //for (key, value) in bankClients {
-    //}
-  }
+    func addBankClients(_ name: String, _ ID: Int) {
+        //for (key, value) in bankClients {
+        //}
+    }
 
     func incBalance(_ deposit: Double) {
-    totalBalance += deposit
-  }
+        totalBalance += deposit
+    }
     
-  func decBalance(_ withdraw: Double){
-    totalBalance -= withdraw
-  }
+    func decBalance(_ withdraw: Double){
+        totalBalance -= withdraw
+    }
+    func transaction(){
+        
+    }
 
 }
