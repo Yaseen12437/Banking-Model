@@ -25,6 +25,7 @@ class Bank {
     func decBalance(_ withdraw: Double){
         totalBalance -= withdraw
     }
+    
     func printTransactions(){
         for (key, value) in bankClients {
             print("\(key): \(value)")

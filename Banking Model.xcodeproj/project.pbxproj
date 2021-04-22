@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0607392631E7C7006714BA /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0607382631E7C7006714BA /* Transaction.swift */; };
 		7A3E16F52631D8A000A35D67 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E16F42631D8A000A35D67 /* Bank.swift */; };
 		7A7C6371261F76FF005A500B /* Martin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C6370261F76FF005A500B /* Martin.swift */; };
 		E32A8472261F626F00641266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A8471261F626F00641266 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A0607382631E7C7006714BA /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		7A3E16F42631D8A000A35D67 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		7A7C6370261F76FF005A500B /* Martin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Martin.swift; sourceTree = "<group>"; };
 		E32A846E261F626F00641266 /* Banking Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 			children = (
 				7A7C6370261F76FF005A500B /* Martin.swift */,
 				7A3E16F42631D8A000A35D67 /* Bank.swift */,
+				7A0607382631E7C7006714BA /* Transaction.swift */,
 				E32A8471261F626F00641266 /* AppDelegate.swift */,
 				E32A8473261F626F00641266 /* SceneDelegate.swift */,
 				E32A8475261F626F00641266 /* ViewController.swift */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A3E16F52631D8A000A35D67 /* Bank.swift in Sources */,
+				7A0607392631E7C7006714BA /* Transaction.swift in Sources */,
 				E32A8476261F626F00641266 /* ViewController.swift in Sources */,
 				E32A8472261F626F00641266 /* AppDelegate.swift in Sources */,
 				7A7C6371261F76FF005A500B /* Martin.swift in Sources */,
