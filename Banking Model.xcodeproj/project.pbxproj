@@ -16,6 +16,8 @@
 		E32A8479261F626F00641266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32A8477261F626F00641266 /* Main.storyboard */; };
 		E32A847B261F626F00641266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32A847A261F626F00641266 /* Assets.xcassets */; };
 		E32A847E261F626F00641266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32A847C261F626F00641266 /* LaunchScreen.storyboard */; };
+		E3BCBF652641AADC0055105A /* dataSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BCBF642641AADC0055105A /* dataSaving.swift */; };
+		E3BCBF692641B8440055105A /* TransactionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3BCBF672641B8440055105A /* TransactionData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E32A847A261F626F00641266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32A847D261F626F00641266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32A847F261F626F00641266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3BCBF642641AADC0055105A /* dataSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataSaving.swift; sourceTree = "<group>"; };
+		E3BCBF682641B8440055105A /* TransactionData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransactionData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +70,9 @@
 				7A3E16F42631D8A000A35D67 /* Bank.swift */,
 				7A0607382631E7C7006714BA /* Transaction.swift */,
 				E32A8471261F626F00641266 /* AppDelegate.swift */,
+				E3BCBF642641AADC0055105A /* dataSaving.swift */,
 				E32A8473261F626F00641266 /* SceneDelegate.swift */,
+				E3BCBF672641B8440055105A /* TransactionData.xcdatamodeld */,
 				E32A8475261F626F00641266 /* ViewController.swift */,
 				E32A8477261F626F00641266 /* Main.storyboard */,
 				E32A847A261F626F00641266 /* Assets.xcassets */,
@@ -150,7 +156,9 @@
 				7A0607392631E7C7006714BA /* Transaction.swift in Sources */,
 				E32A8476261F626F00641266 /* ViewController.swift in Sources */,
 				E32A8472261F626F00641266 /* AppDelegate.swift in Sources */,
+				E3BCBF692641B8440055105A /* TransactionData.xcdatamodeld in Sources */,
 				7A7C6371261F76FF005A500B /* Martin.swift in Sources */,
+				E3BCBF652641AADC0055105A /* dataSaving.swift in Sources */,
 				E32A8474261F626F00641266 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E3BCBF672641B8440055105A /* TransactionData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E3BCBF682641B8440055105A /* TransactionData.xcdatamodel */,
+			);
+			currentVersion = E3BCBF682641B8440055105A /* TransactionData.xcdatamodel */;
+			path = TransactionData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E32A8466261F626F00641266 /* Project object */;
 }

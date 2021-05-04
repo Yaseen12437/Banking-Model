@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Transaction {
+class Transaction: Codable {
     var name: String
     var totalAmount: Int
     var receiverTotal: Int
@@ -62,3 +62,7 @@ class Transaction {
         return totalAmount
     }
 }
+
+
+
+
