@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     
-    func saveContext(backgroundContext: NSManagedObjectContext? = nil) {
-        let context = backgroundContext ?? viewContext
+    func saveContext() {
+        let context = persistentContainer.viewContext
         guard context.hasChanges else { return }
         do {
             try context.save()
