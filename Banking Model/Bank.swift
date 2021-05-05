@@ -31,5 +31,32 @@ class Bank {
             print("\(key): \(value)")
         }
     }
+    
+    func readWriteData() {
+        let filename = "ClientData"
+        let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        let fileURL = DocumentDirURL.appendingPathComponent(filename).appendingPathExtension(".txt")
+        
+        print("File Path: \(fileURL.path)")
+        
+        let writeString = "Test String"
+        do {
+            // Write out Data to file
+            try writeString.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
+            
+        } catch let error as NSError {
+            print("Failed to write to URL ")
+            print(error)
+        }
+        var readString = ""
+        do {
+            readString = try String(contentsOf: fileURL)
+        } catch let error as NSError{
+            print("Failed to read file")
+            print(error)
+        }
+        
+        print("Contents of the file \(readString)")
+    }
 
 }
