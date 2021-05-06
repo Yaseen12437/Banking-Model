@@ -20,6 +20,42 @@ class Address: Codable {
         self.postalCode = postalCode
         self.country = country
     }
-    
-    
 }
+
+let directoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask) [0]
+let fileURL = URL(fileURLWithPath: "addressFile", relativeTo: directoryURL).appendingPathExtension("txt")
+
+//Creating data to be saved
+func savingData() {
+    let testString = "Data to be saved"
+    guard let data = testString.data(using: .utf8) else {
+        print("Cannot save string to data")
+        return
+    }
+    
+// Saving the data
+    do {
+        try data.write(to: fileURL)
+        print("File saved: \(fileURL.absoluteURL)")
+    }
+//Catch any errors
+    catch {
+        print(error.localizedDescription)
+    }
+}
+
+func readingData() {
+//Retrieve the saved data
+    do {
+        let savedData = try Data(contentsOf: fileURL)
+//Convert data back into a string
+        if let savedString = String(data: savedData, encoding: .utf8) {
+            print(savedData)
+        }
+    }
+//Catch any errors
+    catch {
+        print("Unable to read the file")
+    }
+}
+
