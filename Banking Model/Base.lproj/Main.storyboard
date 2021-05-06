@@ -32,7 +32,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6FW-Ot-3ke">
                                                 <rect key="frame" x="0.0" y="75" width="310" height="50.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3dR-WU-SWu">
                                                 <rect key="frame" x="0.0" y="150.5" width="310" height="44.5"/>
@@ -72,19 +72,12 @@
                                     <constraint firstAttribute="width" constant="310" id="mMg-Jz-Cbf"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="WASCUC-CSUF-Accreditation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngc-Qr-Zjr">
-                                <rect key="frame" x="21" y="-109" width="374" height="818"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ngc-Qr-Zjr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2Lh-fq-ttL"/>
-                            <constraint firstItem="Ngc-Qr-Zjr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="F2N-hf-bVW"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Ngc-Qr-Zjr" secondAttribute="bottom" id="S8e-cT-Jbq"/>
                             <constraint firstItem="ov4-rn-erU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eaV-PL-cdp"/>
                             <constraint firstItem="ov4-rn-erU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rZb-IR-o3E"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ngc-Qr-Zjr" secondAttribute="trailing" id="za7-cv-IrL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -164,7 +157,4 @@
             <point key="canvasLocation" x="498.55072463768118" y="89.732142857142847"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="WASCUC-CSUF-Accreditation" width="800" height="502"/>
-    </resources>
 </document>

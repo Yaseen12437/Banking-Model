@@ -49,7 +49,7 @@ func readingData() {
     do {
         let savedData = try Data(contentsOf: fileURL)
 //Convert data back into a string
-        if let savedString = String(data: savedData, encoding: .utf8) {
+        if String(data: savedData, encoding: .utf8) != nil {
             print(savedData)
         }
     }
