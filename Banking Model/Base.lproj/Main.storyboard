@@ -25,6 +25,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="username:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="csA-RN-8Av"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6FW-Ot-3ke">
                                                 <rect key="frame" x="0.0" y="75" width="310" height="50.5"/>
@@ -44,6 +47,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
+                                                    <action selector="longin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s63-K0-psY"/>
                                                     <segue destination="RKs-Ee-8kx" kind="show" id="jYk-ke-8LI"/>
                                                 </connections>
                                             </button>
@@ -76,15 +80,18 @@
                             <constraint firstItem="ov4-rn-erU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rZb-IR-o3E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="3dR-WU-SWu" id="TT2-jC-rCI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="35I-u7-jfM">
             <objects>
-                <viewController id="RKs-Ee-8kx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="second" id="RKs-Ee-8kx" customClass="SecondViewController" customModule="Banking_Model" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bjE-ST-wYu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,20 +127,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sly-xK-z4B">
                                                 <rect key="frame" x="0.0" y="276" width="315" height="90.5"/>
                                                 <state key="normal" title="Deposite"/>
-                                                <connections>
-                                                    <segue destination="PNQ-5M-rkm" kind="popoverPresentation" popoverAnchorView="sly-xK-z4B" id="biw-QO-jfa">
-                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                    </segue>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45K-d4-tLH">
                                                 <rect key="frame" x="0.0" y="366.5" width="315" height="90.5"/>
                                                 <state key="normal" title="Send Money"/>
-                                                <connections>
-                                                    <segue destination="sXz-BW-BYD" kind="popoverPresentation" popoverAnchorView="45K-d4-tLH" id="PY5-Lo-HXF">
-                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                    </segue>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -158,55 +155,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4J-1g-X15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="498.55072463768118" y="89.732142857142847"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="cAp-3F-CUv">
-            <objects>
-                <viewController id="sXz-BW-BYD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kCQ-lL-HNI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="wRH-pk-E1T"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tmE-2r-fTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="499" y="763"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="m6m-5G-7kA">
-            <objects>
-                <viewController id="PNQ-5M-rkm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u0Q-8K-aDH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itX-Fd-P4y">
-                                <rect key="frame" x="112" y="236" width="207" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account #" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VlX-la-V5M">
-                                <rect key="frame" x="115" y="294" width="208" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lds-2d-aaZ">
-                                <rect key="frame" x="146" y="363" width="128" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Deposite"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="mE4-mz-v72"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aK8-9w-mKM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1214.4927536231885" y="88.392857142857139"/>
         </scene>
     </scenes>
 </document>

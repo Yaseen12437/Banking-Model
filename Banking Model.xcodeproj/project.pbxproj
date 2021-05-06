@@ -10,22 +10,21 @@
 		7A0607392631E7C7006714BA /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0607382631E7C7006714BA /* Transaction.swift */; };
 		7A3E16F52631D8A000A35D67 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E16F42631D8A000A35D67 /* Bank.swift */; };
 		7A7C6371261F76FF005A500B /* Martin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C6370261F76FF005A500B /* Martin.swift */; };
+		E31BC5DA264453B9001EDC0C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31BC5D9264453B9001EDC0C /* SecondViewController.swift */; };
 		E32A8472261F626F00641266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A8471261F626F00641266 /* AppDelegate.swift */; };
 		E32A8474261F626F00641266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A8473261F626F00641266 /* SceneDelegate.swift */; };
 		E32A8476261F626F00641266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A8475261F626F00641266 /* ViewController.swift */; };
 		E32A8479261F626F00641266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32A8477261F626F00641266 /* Main.storyboard */; };
 		E32A847B261F626F00641266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32A847A261F626F00641266 /* Assets.xcassets */; };
 		E32A847E261F626F00641266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32A847C261F626F00641266 /* LaunchScreen.storyboard */; };
-		E3BCBF652641AADC0055105A /* dataSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BCBF642641AADC0055105A /* dataSaving.swift */; };
 		E3BCBF692641B8440055105A /* TransactionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3BCBF672641B8440055105A /* TransactionData.xcdatamodeld */; };
-		E3C8A9892643597B00195891 /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8A9872643597A00195891 /* Transaction+CoreDataClass.swift */; };
-		E3C8A98A2643597B00195891 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8A9882643597B00195891 /* Transaction+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A0607382631E7C7006714BA /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		7A3E16F42631D8A000A35D67 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		7A7C6370261F76FF005A500B /* Martin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Martin.swift; sourceTree = "<group>"; };
+		E31BC5D9264453B9001EDC0C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E32A846E261F626F00641266 /* Banking Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32A8471261F626F00641266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E32A8473261F626F00641266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,10 +33,7 @@
 		E32A847A261F626F00641266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32A847D261F626F00641266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32A847F261F626F00641266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3BCBF642641AADC0055105A /* dataSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataSaving.swift; sourceTree = "<group>"; };
 		E3BCBF682641B8440055105A /* TransactionData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransactionData.xcdatamodel; sourceTree = "<group>"; };
-		E3C8A9872643597A00195891 /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E3C8A9882643597B00195891 /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +71,8 @@
 				7A3E16F42631D8A000A35D67 /* Bank.swift */,
 				7A0607382631E7C7006714BA /* Transaction.swift */,
 				E32A8471261F626F00641266 /* AppDelegate.swift */,
-				E3BCBF642641AADC0055105A /* dataSaving.swift */,
 				E32A8473261F626F00641266 /* SceneDelegate.swift */,
+				E31BC5D9264453B9001EDC0C /* SecondViewController.swift */,
 				E3BCBF672641B8440055105A /* TransactionData.xcdatamodeld */,
 				E32A8475261F626F00641266 /* ViewController.swift */,
 				E32A8477261F626F00641266 /* Main.storyboard */,
@@ -90,8 +86,6 @@
 		E3C8A98C26435AEC00195891 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				E3C8A9872643597A00195891 /* Transaction+CoreDataClass.swift */,
-				E3C8A9882643597B00195891 /* Transaction+CoreDataProperties.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -166,15 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C8A98A2643597B00195891 /* Transaction+CoreDataProperties.swift in Sources */,
 				7A3E16F52631D8A000A35D67 /* Bank.swift in Sources */,
 				7A0607392631E7C7006714BA /* Transaction.swift in Sources */,
 				E32A8476261F626F00641266 /* ViewController.swift in Sources */,
 				E32A8472261F626F00641266 /* AppDelegate.swift in Sources */,
-				E3C8A9892643597B00195891 /* Transaction+CoreDataClass.swift in Sources */,
 				E3BCBF692641B8440055105A /* TransactionData.xcdatamodeld in Sources */,
 				7A7C6371261F76FF005A500B /* Martin.swift in Sources */,
-				E3BCBF652641AADC0055105A /* dataSaving.swift in Sources */,
+				E31BC5DA264453B9001EDC0C /* SecondViewController.swift in Sources */,
 				E32A8474261F626F00641266 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

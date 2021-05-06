@@ -5,7 +5,7 @@
 //  Created by CSUFTitan on 4/8/21.
 //
 
-import Foundation
+/*import Foundation
 
 class Address: Codable {
     var street : String
@@ -58,4 +58,4 @@ func readingData() {
         print("Unable to read the file")
     }
 }
-
+*/
