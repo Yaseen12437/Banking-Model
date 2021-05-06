@@ -10,6 +10,7 @@
 		7A0607392631E7C7006714BA /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0607382631E7C7006714BA /* Transaction.swift */; };
 		7A3E16F52631D8A000A35D67 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E16F42631D8A000A35D67 /* Bank.swift */; };
 		7A7C6371261F76FF005A500B /* Martin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C6370261F76FF005A500B /* Martin.swift */; };
+		7AE2B2C126445EEB0064B6BA /* BankingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2B2C026445EEB0064B6BA /* BankingModelTests.swift */; };
 		E31BC5DA264453B9001EDC0C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31BC5D9264453B9001EDC0C /* SecondViewController.swift */; };
 		E32A8472261F626F00641266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A8471261F626F00641266 /* AppDelegate.swift */; };
 		E32A8474261F626F00641266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A8473261F626F00641266 /* SceneDelegate.swift */; };
@@ -20,10 +21,23 @@
 		E3BCBF692641B8440055105A /* TransactionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3BCBF672641B8440055105A /* TransactionData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7AE2B2C326445EEB0064B6BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E32A8466261F626F00641266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E32A846D261F626F00641266;
+			remoteInfo = "Banking Model";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		7A0607382631E7C7006714BA /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		7A3E16F42631D8A000A35D67 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		7A7C6370261F76FF005A500B /* Martin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Martin.swift; sourceTree = "<group>"; };
+		7AE2B2BE26445EEB0064B6BA /* BankingModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankingModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE2B2C026445EEB0064B6BA /* BankingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingModelTests.swift; sourceTree = "<group>"; };
+		7AE2B2C226445EEB0064B6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E31BC5D9264453B9001EDC0C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E32A846E261F626F00641266 /* Banking Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32A8471261F626F00641266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7AE2B2BB26445EEB0064B6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E32A846B261F626F00641266 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AE2B2BF26445EEB0064B6BA /* BankingModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2B2C026445EEB0064B6BA /* BankingModelTests.swift */,
+				7AE2B2C226445EEB0064B6BA /* Info.plist */,
+			);
+			path = BankingModelTests;
+			sourceTree = "<group>";
+		};
 		E32A8465261F626F00641266 = {
 			isa = PBXGroup;
 			children = (
 				E32A8470261F626F00641266 /* Banking Model */,
+				7AE2B2BF26445EEB0064B6BA /* BankingModelTests */,
 				E32A846F261F626F00641266 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E32A846E261F626F00641266 /* Banking Model.app */,
+				7AE2B2BE26445EEB0064B6BA /* BankingModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +125,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7AE2B2BD26445EEB0064B6BA /* BankingModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE2B2C726445EEB0064B6BA /* Build configuration list for PBXNativeTarget "BankingModelTests" */;
+			buildPhases = (
+				7AE2B2BA26445EEB0064B6BA /* Sources */,
+				7AE2B2BB26445EEB0064B6BA /* Frameworks */,
+				7AE2B2BC26445EEB0064B6BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AE2B2C426445EEB0064B6BA /* PBXTargetDependency */,
+			);
+			name = BankingModelTests;
+			productName = BankingModelTests;
+			productReference = 7AE2B2BE26445EEB0064B6BA /* BankingModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E32A846D261F626F00641266 /* Banking Model */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E32A8482261F626F00641266 /* Build configuration list for PBXNativeTarget "Banking Model" */;
@@ -119,6 +169,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					7AE2B2BD26445EEB0064B6BA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = E32A846D261F626F00641266;
+					};
 					E32A846D261F626F00641266 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -138,11 +192,19 @@
 			projectRoot = "";
 			targets = (
 				E32A846D261F626F00641266 /* Banking Model */,
+				7AE2B2BD26445EEB0064B6BA /* BankingModelTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7AE2B2BC26445EEB0064B6BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E32A846C261F626F00641266 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +218,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7AE2B2BA26445EEB0064B6BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE2B2C126445EEB0064B6BA /* BankingModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E32A846A261F626F00641266 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +242,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AE2B2C426445EEB0064B6BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E32A846D261F626F00641266 /* Banking Model */;
+			targetProxy = 7AE2B2C326445EEB0064B6BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E32A8477261F626F00641266 /* Main.storyboard */ = {
@@ -193,6 +271,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7AE2B2C526445EEB0064B6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankingModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hi.BankingModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Banking Model.app/Banking Model";
+			};
+			name = Debug;
+		};
+		7AE2B2C626445EEB0064B6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankingModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hi.BankingModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Banking Model.app/Banking Model";
+			};
+			name = Release;
+		};
 		E32A8480261F626F00641266 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -348,6 +464,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7AE2B2C726445EEB0064B6BA /* Build configuration list for PBXNativeTarget "BankingModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE2B2C526445EEB0064B6BA /* Debug */,
+				7AE2B2C626445EEB0064B6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E32A8469261F626F00641266 /* Build configuration list for PBXProject "Banking Model" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
