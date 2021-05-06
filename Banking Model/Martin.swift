@@ -7,22 +7,19 @@
 
 import Foundation
 
-class Address {
-    var Street : String = ""
-    var City : String = ""
-    var State : String = ""
-    var PostalCode : Int = 0
-    var Country : String = ""
-    
-    /*let addressFiles = Files(Street: " ", City: " ", State: " ", PostalCode: Int, Country: " " )
-    let propertyListEncoder = PropertyListEncoder()
-    if let encodedFiles = try?
-        propertyListEncoder.encode(addressFiles) {
-            try? encodedFiles?.write(to: archiveURL, options: .noFileProtection)
-        }*/
-    
-    
-    func MailedBankStatements() {
-        
+class Address: Codable {
+    var street : String
+    var city : String
+    var state : String
+    var postalCode : Int
+    var country : String
+    init(street: String, city: String, state: String, postalCode: Int, country: String) {
+        self.street = street
+        self.city = city
+        self.state = state
+        self.postalCode = postalCode
+        self.country = country
     }
+    
+    
 }
