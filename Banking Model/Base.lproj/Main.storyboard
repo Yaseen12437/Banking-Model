@@ -22,7 +22,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="300"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EEk-Q9-gAn">
-                                                <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="39.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -30,15 +30,15 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6FW-Ot-3ke">
-                                                <rect key="frame" x="0.0" y="75" width="310" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="64.5" width="310" height="39.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3dR-WU-SWu">
-                                                <rect key="frame" x="0.0" y="150.5" width="310" height="44.5"/>
+                                                <rect key="frame" x="0.0" y="129" width="310" height="35"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="Log In">
+                                                        <fragment content="Sign In">
                                                             <attributes>
                                                                 <font key="NSFont" metaFont="system" size="15"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -51,8 +51,12 @@
                                                     <segue destination="RKs-Ee-8kx" kind="show" id="jYk-ke-8LI"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0S-W8-xoM">
+                                                <rect key="frame" x="0.0" y="189" width="310" height="35"/>
+                                                <state key="normal" title="Create an account"/>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08m-CK-yaD">
-                                                <rect key="frame" x="0.0" y="220" width="310" height="80"/>
+                                                <rect key="frame" x="0.0" y="249" width="310" height="51"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Forgot Password">
@@ -108,7 +112,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I.D." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdB-U1-kgF">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdB-U1-kgF">
                                                 <rect key="frame" x="0.0" y="62" width="315" height="61.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -122,15 +126,15 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8p-NJ-IWr">
                                                 <rect key="frame" x="0.0" y="185.5" width="315" height="90.5"/>
-                                                <state key="normal" title="View other accounts"/>
+                                                <state key="normal" title="View Transactions"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sly-xK-z4B">
                                                 <rect key="frame" x="0.0" y="276" width="315" height="90.5"/>
-                                                <state key="normal" title="Deposite"/>
+                                                <state key="normal" title="Add Transaction"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45K-d4-tLH">
                                                 <rect key="frame" x="0.0" y="366.5" width="315" height="90.5"/>
-                                                <state key="normal" title="Send Money"/>
+                                                <state key="normal" title="Deposit Funds"/>
                                             </button>
                                         </subviews>
                                     </stackView>
