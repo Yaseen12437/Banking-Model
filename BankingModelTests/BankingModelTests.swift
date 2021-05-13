@@ -5,28 +5,24 @@
 //  Created by CSUFTitan on 5/6/21.
 //
 
+@testable import Banking_Model
+
 import XCTest
 
 class BankingModelTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func testInit() {
+        let _ = Transaction(name: "Matt", totalAmount: 500, receiverTotal: 0)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testDeposit() {
+        let transaction = Transaction(name: "Matt", totalAmount: 500, receiverTotal: 0)
+        transaction.deposit("Matt", depositNum: 50)
+        XCTAssertEqual(transaction.totalAmount, 550)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testWithdraw() {
+        let transaction = Transaction(name: "Matt", totalAmount: 500, receiverTotal: 0)
+        transaction.withdraw("Matt", withdrawNum: 50)
+        XCTAssertEqual(transaction.totalAmount, 450)
     }
 
 }
