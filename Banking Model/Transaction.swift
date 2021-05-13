@@ -5,7 +5,7 @@
 //  Created by CSUFTitan on 4/22/21.
 //
 
-/*import Foundation
+import Foundation
 
 class Transaction: Codable {
     var name: String
@@ -64,5 +64,5 @@ class Transaction: Codable {
 }
 
 
-*/
+
 
